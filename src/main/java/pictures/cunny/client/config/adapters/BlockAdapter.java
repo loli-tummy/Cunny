@@ -3,10 +3,10 @@ package pictures.cunny.client.config.adapters;
 import com.google.gson.TypeAdapter;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import pictures.cunny.client.utility.blocks.BlockUtils;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
+import pictures.cunny.client.utility.blocks.BlockUtils;
 
 import java.io.IOException;
 

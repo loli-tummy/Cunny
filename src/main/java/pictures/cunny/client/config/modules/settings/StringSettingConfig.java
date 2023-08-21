@@ -1,8 +1,8 @@
 package pictures.cunny.client.config.modules.settings;
 
 import imgui.type.ImString;
-import pictures.cunny.client.framework.modules.settings.Setting;
 import org.jetbrains.annotations.NotNull;
+import pictures.cunny.client.framework.modules.settings.Setting;
 
 public class StringSettingConfig extends SettingConfig<ImString> {
     @Override

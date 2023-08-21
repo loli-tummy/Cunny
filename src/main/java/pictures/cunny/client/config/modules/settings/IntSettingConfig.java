@@ -1,9 +1,8 @@
 package pictures.cunny.client.config.modules.settings;
 
-import imgui.type.ImBoolean;
 import imgui.type.ImInt;
-import pictures.cunny.client.framework.modules.settings.Setting;
 import org.jetbrains.annotations.NotNull;
+import pictures.cunny.client.framework.modules.settings.Setting;
 
 public class IntSettingConfig extends SettingConfig<ImInt> {
     @Override

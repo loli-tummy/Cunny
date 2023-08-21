@@ -1,8 +1,8 @@
 package pictures.cunny.client.config.modules.settings;
 
+import org.jetbrains.annotations.NotNull;
 import pictures.cunny.client.framework.modules.settings.ListSetting;
 import pictures.cunny.client.framework.modules.settings.Setting;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.List;

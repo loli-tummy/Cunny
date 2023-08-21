@@ -14,5 +14,6 @@ public class ChatComponentMixin {
      * @reason Let's not log all of our chat locally, maybe.
      */
     @Overwrite
-    private void logChatMessage(Component component, @Nullable GuiMessageTag guiMessageTag) {}
+    private void logChatMessage(Component component, @Nullable GuiMessageTag guiMessageTag) {
+    }
 }

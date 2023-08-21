@@ -1,8 +1,8 @@
 package pictures.cunny.client.config.modules.settings;
 
+import org.jetbrains.annotations.NotNull;
 import pictures.cunny.client.framework.modules.settings.Setting;
 import pictures.cunny.client.framework.modules.settings.wrappers.ImBlockPos;
-import org.jetbrains.annotations.NotNull;
 
 public class BlockPosSettingConfig extends SettingConfig<ImBlockPos> {
     @Override

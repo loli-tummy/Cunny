@@ -23,11 +23,9 @@ import java.util.Optional;
 import static pictures.cunny.client.Cunny.mc;
 
 public class BookEditorView extends View {
-    public BookSettings config;
-
     public static final String NULL_CHARACTER = " ";
-
     private final List<String> PAGES_CACHE = new ArrayList<>();
+    public BookSettings config;
     private String title = "";
 
     @Override

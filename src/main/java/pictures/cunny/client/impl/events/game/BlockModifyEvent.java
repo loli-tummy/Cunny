@@ -1,8 +1,8 @@
 package pictures.cunny.client.impl.events.game;
 
-import pictures.cunny.client.framework.events.Event;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.state.BlockState;
+import pictures.cunny.client.framework.events.Event;
 
 public class BlockModifyEvent extends Event {
     public BlockState state;

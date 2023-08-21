@@ -1,9 +1,9 @@
 package pictures.cunny.client.framework.modules.settings;
 
-import pictures.cunny.client.utility.blocks.BlockUtils;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
+import pictures.cunny.client.utility.blocks.BlockUtils;
 
 import java.util.ArrayList;
 

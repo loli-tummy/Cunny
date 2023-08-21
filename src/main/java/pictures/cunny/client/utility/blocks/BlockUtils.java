@@ -1,16 +1,5 @@
 package pictures.cunny.client.utility.blocks;
 
-import pictures.cunny.client.Cunny;
-import pictures.cunny.client.config.Config;
-import pictures.cunny.client.config.sub.enums.ActionMode;
-import pictures.cunny.client.config.sub.enums.ActionType;
-import pictures.cunny.client.config.sub.enums.AirPlaceMode;
-import pictures.cunny.client.config.sub.enums.SwitchMode;
-import pictures.cunny.client.mixin.IClipContext;
-import pictures.cunny.client.utility.EntityUtils;
-import pictures.cunny.client.utility.InventoryUtils;
-import pictures.cunny.client.utility.PacketUtils;
-import pictures.cunny.client.utility.RotationUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -31,7 +20,17 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.CollisionContext;
-import pictures.cunny.client.config.sub.enums.*;
+import pictures.cunny.client.Cunny;
+import pictures.cunny.client.config.Config;
+import pictures.cunny.client.config.sub.enums.ActionMode;
+import pictures.cunny.client.config.sub.enums.ActionType;
+import pictures.cunny.client.config.sub.enums.AirPlaceMode;
+import pictures.cunny.client.config.sub.enums.SwitchMode;
+import pictures.cunny.client.mixin.IClipContext;
+import pictures.cunny.client.utility.EntityUtils;
+import pictures.cunny.client.utility.InventoryUtils;
+import pictures.cunny.client.utility.PacketUtils;
+import pictures.cunny.client.utility.RotationUtils;
 
 import java.util.Arrays;
 import java.util.List;

@@ -1,8 +1,8 @@
 package pictures.cunny.client.framework.modules;
 
-import pictures.cunny.client.utility.StringUtils;
 import lombok.Getter;
 import lombok.Setter;
+import pictures.cunny.client.utility.StringUtils;
 
 public class Category {
     public final String name;

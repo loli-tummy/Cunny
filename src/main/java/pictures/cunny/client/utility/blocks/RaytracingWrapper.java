@@ -1,9 +1,9 @@
 package pictures.cunny.client.utility.blocks;
 
-import pictures.cunny.client.utility.FakePlayerEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.phys.Vec3;
+import pictures.cunny.client.utility.FakePlayerEntity;
 
 public class RaytracingWrapper {
     public Vec3 start = Vec3.ZERO;

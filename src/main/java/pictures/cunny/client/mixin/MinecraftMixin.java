@@ -1,8 +1,5 @@
 package pictures.cunny.client.mixin;
 
-import pictures.cunny.client.Cunny;
-import pictures.cunny.client.impl.events.game.ScreenEvent;
-import pictures.cunny.client.impl.events.game.TickEvent;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.Screen;
 import org.jetbrains.annotations.Nullable;
@@ -11,6 +8,9 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
+import pictures.cunny.client.Cunny;
+import pictures.cunny.client.impl.events.game.ScreenEvent;
+import pictures.cunny.client.impl.events.game.TickEvent;
 
 @Mixin(value = Minecraft.class)
 public class MinecraftMixin {

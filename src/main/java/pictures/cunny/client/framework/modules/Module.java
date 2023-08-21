@@ -1,14 +1,14 @@
 package pictures.cunny.client.framework.modules;
 
 import imgui.type.ImBoolean;
-import pictures.cunny.client.Cunny;
-import pictures.cunny.client.framework.modules.settings.SettingGroup;
-import pictures.cunny.client.utility.StringUtils;
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
 import lombok.Getter;
 import lombok.Setter;
 import net.minecraft.client.Minecraft;
 import org.jetbrains.annotations.Nullable;
+import pictures.cunny.client.Cunny;
+import pictures.cunny.client.framework.modules.settings.SettingGroup;
+import pictures.cunny.client.utility.StringUtils;
 
 import java.util.List;
 
@@ -22,12 +22,12 @@ public class Module {
     @Getter
     private final List<SettingGroup> settingGroups = new ObjectArrayList<>(1);
     public int keybind = -1;
+    public SettingGroup coreGroup = add(new SettingGroup("Core",
+            "Core module settings."));
     @Getter
     @Setter
     private String label;
     private String description;
-    public SettingGroup coreGroup = add(new SettingGroup("Core",
-            "Core module settings."));
 
     public Module(Category category, String name, String description) {
         this(category, name, description, null, null);

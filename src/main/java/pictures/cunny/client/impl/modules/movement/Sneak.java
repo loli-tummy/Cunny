@@ -1,5 +1,8 @@
 package pictures.cunny.client.impl.modules.movement;
 
+import net.minecraft.network.protocol.game.ServerboundInteractPacket;
+import net.minecraft.network.protocol.game.ServerboundPlayerCommandPacket;
+import net.minecraft.network.protocol.game.ServerboundPlayerInputPacket;
 import pictures.cunny.client.framework.events.EventListener;
 import pictures.cunny.client.framework.modules.Categories;
 import pictures.cunny.client.framework.modules.Module;
@@ -8,9 +11,6 @@ import pictures.cunny.client.framework.modules.settings.SettingGroup;
 import pictures.cunny.client.impl.events.game.PacketEvent;
 import pictures.cunny.client.impl.events.game.TickEvent;
 import pictures.cunny.client.utility.PacketUtils;
-import net.minecraft.network.protocol.game.ServerboundInteractPacket;
-import net.minecraft.network.protocol.game.ServerboundPlayerCommandPacket;
-import net.minecraft.network.protocol.game.ServerboundPlayerInputPacket;
 
 public class Sneak extends Module {
     public SettingGroup coreGroup = add(new SettingGroup("Core",

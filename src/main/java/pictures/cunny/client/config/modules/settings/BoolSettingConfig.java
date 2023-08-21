@@ -1,8 +1,8 @@
 package pictures.cunny.client.config.modules.settings;
 
 import imgui.type.ImBoolean;
-import pictures.cunny.client.framework.modules.settings.Setting;
 import org.jetbrains.annotations.NotNull;
+import pictures.cunny.client.framework.modules.settings.Setting;
 
 public class BoolSettingConfig extends SettingConfig<ImBoolean> {
     @Override

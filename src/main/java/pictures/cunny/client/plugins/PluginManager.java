@@ -1,10 +1,10 @@
 package pictures.cunny.client.plugins;
 
-import pictures.cunny.client.Cunny;
 import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.loader.api.entrypoint.EntrypointContainer;
 import net.fabricmc.loader.api.metadata.ModMetadata;
 import net.fabricmc.loader.impl.entrypoint.EntrypointUtils;
+import pictures.cunny.client.Cunny;
 
 import java.util.ArrayList;
 import java.util.HashMap;

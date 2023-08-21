@@ -1,8 +1,8 @@
 package pictures.cunny.client.impl.events.game;
 
-import pictures.cunny.client.framework.events.Event;
 import net.minecraft.network.PacketListener;
 import net.minecraft.network.protocol.Packet;
+import pictures.cunny.client.framework.events.Event;
 
 public abstract class PacketEvent extends Event {
     public Packet<? extends PacketListener> packet;

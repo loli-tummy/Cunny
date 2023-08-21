@@ -1,11 +1,11 @@
 package pictures.cunny.client.utility.blocks;
 
-import pictures.cunny.client.utility.PacketUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.protocol.game.ServerboundPlayerActionPacket;
 import net.minecraft.network.protocol.game.ServerboundSwingPacket;
 import net.minecraft.world.InteractionHand;
+import pictures.cunny.client.utility.PacketUtils;
 
 import static pictures.cunny.client.Cunny.mc;
 

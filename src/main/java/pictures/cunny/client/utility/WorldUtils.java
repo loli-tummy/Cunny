@@ -1,9 +1,9 @@
 package pictures.cunny.client.utility;
 
-import pictures.cunny.client.utility.blocks.BlockUtils;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
+import pictures.cunny.client.utility.blocks.BlockUtils;
 
 import java.util.function.Predicate;
 

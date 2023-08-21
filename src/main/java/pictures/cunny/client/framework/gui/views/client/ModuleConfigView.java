@@ -16,15 +16,15 @@ public class ModuleConfigView extends View {
     private static Module module;
     private static boolean awaitingWindowAdjustment;
 
-    @Override
-    public String name() {
-        return "Module Config";
-    }
-
     public static void setModule(Module module) {
         //SettingsComponents.clear();
         if (ModuleConfigView.module != null) ModuleConfigView.awaitingWindowAdjustment = true;
         ModuleConfigView.module = module;
+    }
+
+    @Override
+    public String name() {
+        return "Module Config";
     }
 
     @Override

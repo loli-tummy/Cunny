@@ -1,10 +1,10 @@
 package pictures.cunny.client.impl.modules.movement;
 
+import net.minecraft.network.protocol.game.ServerboundPlayerInputPacket;
 import pictures.cunny.client.framework.events.EventListener;
 import pictures.cunny.client.framework.modules.Categories;
 import pictures.cunny.client.framework.modules.Module;
 import pictures.cunny.client.impl.events.game.PacketEvent;
-import net.minecraft.network.protocol.game.ServerboundPlayerInputPacket;
 
 public class DeSyncInputs extends Module {
     public DeSyncInputs() {

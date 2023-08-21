@@ -1,7 +1,7 @@
 package pictures.cunny.client.impl.events.game;
 
-import pictures.cunny.client.framework.events.Event;
 import net.minecraft.network.chat.Component;
+import pictures.cunny.client.framework.events.Event;
 
 public class DisconnectEvent extends Event {
     public static DisconnectEvent INSTANCE = new DisconnectEvent();

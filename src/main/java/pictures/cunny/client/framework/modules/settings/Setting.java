@@ -1,10 +1,10 @@
 package pictures.cunny.client.framework.modules.settings;
 
 import imgui.ImGui;
-import pictures.cunny.client.config.modules.settings.SettingConfig;
-import pictures.cunny.client.utility.StringUtils;
 import lombok.SneakyThrows;
 import org.jetbrains.annotations.NotNull;
+import pictures.cunny.client.config.modules.settings.SettingConfig;
+import pictures.cunny.client.utility.StringUtils;
 
 import java.util.Objects;
 import java.util.function.Predicate;

@@ -3,8 +3,8 @@ package pictures.cunny.client.framework.modules.settings;
 import imgui.ImGui;
 import imgui.flag.ImGuiInputTextFlags;
 import imgui.type.ImString;
-import pictures.cunny.client.config.modules.settings.StringSettingConfig;
 import org.jetbrains.annotations.NotNull;
+import pictures.cunny.client.config.modules.settings.StringSettingConfig;
 
 public class StringSetting extends Setting<StringSetting, ImString> {
     public StringSetting(Builder builder) {

@@ -1,13 +1,13 @@
 package pictures.cunny.client.mixin;
 
-import pictures.cunny.client.Cunny;
-import pictures.cunny.client.framework.gui.Gui;
-import pictures.cunny.client.impl.modules.misc.DetachMouse;
 import net.minecraft.client.MouseHandler;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import pictures.cunny.client.Cunny;
+import pictures.cunny.client.framework.gui.Gui;
+import pictures.cunny.client.impl.modules.misc.DetachMouse;
 
 @Mixin(value = MouseHandler.class, priority = 1)
 public class MouseHandlerMixin {

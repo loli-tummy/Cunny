@@ -1,8 +1,8 @@
 package pictures.cunny.client.utility;
 
-import pictures.cunny.client.Cunny;
 import it.unimi.dsi.fastutil.objects.ObjectBigArrayBigList;
 import lombok.SneakyThrows;
+import pictures.cunny.client.Cunny;
 
 import java.nio.file.Files;
 import java.nio.file.Path;

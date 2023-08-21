@@ -5,13 +5,13 @@ import imgui.flag.ImGuiCond;
 import imgui.flag.ImGuiInputTextFlags;
 import imgui.flag.ImGuiWindowFlags;
 import imgui.type.ImString;
+import it.unimi.dsi.fastutil.objects.ObjectBigArrayBigList;
 import pictures.cunny.client.Cunny;
 import pictures.cunny.client.config.Config;
 import pictures.cunny.client.config.gui.PersistentGuiSettings;
 import pictures.cunny.client.framework.gui.utility.ColoredText;
 import pictures.cunny.client.framework.gui.utility.GuiUtils;
 import pictures.cunny.client.framework.gui.views.View;
-import it.unimi.dsi.fastutil.objects.ObjectBigArrayBigList;
 
 public class ClientLogView extends View {
     public static ImString inputText = new ImString();

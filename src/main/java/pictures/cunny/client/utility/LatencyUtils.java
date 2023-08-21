@@ -1,11 +1,11 @@
 package pictures.cunny.client.utility;
 
+import net.minecraft.network.protocol.game.ClientboundAwardStatsPacket;
+import net.minecraft.network.protocol.game.ServerboundClientCommandPacket;
 import pictures.cunny.client.framework.events.EventListener;
 import pictures.cunny.client.impl.events.game.PacketEvent;
 import pictures.cunny.client.impl.events.game.ScreenEvent;
 import pictures.cunny.client.impl.events.game.TickEvent;
-import net.minecraft.network.protocol.game.ClientboundAwardStatsPacket;
-import net.minecraft.network.protocol.game.ServerboundClientCommandPacket;
 
 import java.util.ArrayList;
 

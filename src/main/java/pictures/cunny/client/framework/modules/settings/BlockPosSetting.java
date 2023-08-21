@@ -2,9 +2,9 @@ package pictures.cunny.client.framework.modules.settings;
 
 import imgui.ImGui;
 import imgui.flag.ImGuiTableFlags;
+import net.minecraft.core.BlockPos;
 import pictures.cunny.client.config.modules.settings.BlockPosSettingConfig;
 import pictures.cunny.client.framework.modules.settings.wrappers.ImBlockPos;
-import net.minecraft.core.BlockPos;
 
 import static pictures.cunny.client.Cunny.mc;
 

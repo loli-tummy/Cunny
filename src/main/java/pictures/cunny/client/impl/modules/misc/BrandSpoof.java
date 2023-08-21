@@ -1,17 +1,16 @@
 package pictures.cunny.client.impl.modules.misc;
 
+import io.netty.buffer.Unpooled;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.network.protocol.game.ServerboundCustomPayloadPacket;
 import pictures.cunny.client.framework.events.EventListener;
 import pictures.cunny.client.framework.modules.Categories;
 import pictures.cunny.client.framework.modules.Module;
 import pictures.cunny.client.framework.modules.settings.BoolSetting;
 import pictures.cunny.client.framework.modules.settings.IntSetting;
-import pictures.cunny.client.framework.modules.settings.SettingGroup;
 import pictures.cunny.client.framework.modules.settings.StringSetting;
 import pictures.cunny.client.impl.events.game.PacketEvent;
 import pictures.cunny.client.utility.StringUtils;
-import io.netty.buffer.Unpooled;
-import net.minecraft.network.FriendlyByteBuf;
-import net.minecraft.network.protocol.game.ServerboundCustomPayloadPacket;
 
 public class BrandSpoof extends Module {
     public final BoolSetting randomBuffer = new BoolSetting.Builder()
@@ -45,10 +44,10 @@ public class BrandSpoof extends Module {
                         ServerboundCustomPayloadPacket.BRAND,
                         new FriendlyByteBuf(Unpooled.buffer())
                                 .writeUtf(randomBuffer.value().get()
-                                                ? StringUtils.randomText(bufferSize.value(), true)
+                                                ? StringUtils.randomText(bufferSize.value().get(), true)
                                                 : stringText.value().get(),
                                         randomBuffer.value().get()
-                                                ? bufferSize.value() * 4
+                                                ? bufferSize.value().get() * 4
                                                 : stringText.value().get().length() * 2));
             }
         }

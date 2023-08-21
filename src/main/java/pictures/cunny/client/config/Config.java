@@ -7,6 +7,7 @@ import com.google.gson.GsonBuilder;
 import imgui.type.ImBoolean;
 import imgui.type.ImInt;
 import imgui.type.ImString;
+import lombok.SneakyThrows;
 import pictures.cunny.client.Cunny;
 import pictures.cunny.client.config.adapters.*;
 import pictures.cunny.client.config.gui.BookSettings;
@@ -23,7 +24,6 @@ import pictures.cunny.client.framework.modules.settings.Setting;
 import pictures.cunny.client.framework.modules.settings.SettingGroup;
 import pictures.cunny.client.utility.FileSystem;
 import pictures.cunny.client.utility.PathIndex;
-import lombok.SneakyThrows;
 
 import java.lang.reflect.Modifier;
 import java.nio.file.Files;

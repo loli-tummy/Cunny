@@ -1,7 +1,5 @@
 package pictures.cunny.client.mixin;
 
-import pictures.cunny.client.Cunny;
-import pictures.cunny.client.impl.events.game.BookSignEvent;
 import net.minecraft.client.gui.screens.inventory.BookEditScreen;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
@@ -9,6 +7,8 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import pictures.cunny.client.Cunny;
+import pictures.cunny.client.impl.events.game.BookSignEvent;
 
 import java.util.List;
 

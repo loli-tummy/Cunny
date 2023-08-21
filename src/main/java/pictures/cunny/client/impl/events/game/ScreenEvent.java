@@ -1,7 +1,7 @@
 package pictures.cunny.client.impl.events.game;
 
-import pictures.cunny.client.framework.events.Event;
 import net.minecraft.client.gui.screens.Screen;
+import pictures.cunny.client.framework.events.Event;
 
 public class ScreenEvent extends Event {
     public Screen screen;

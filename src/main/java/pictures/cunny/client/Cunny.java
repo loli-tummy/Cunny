@@ -1,6 +1,11 @@
 package pictures.cunny.client;
 
-import net.minecraft.client.renderer.chunk.ChunkRenderDispatcher;
+import net.fabricmc.api.ModInitializer;
+import net.fabricmc.loader.api.FabricLoader;
+import net.minecraft.client.Minecraft;
+import net.minecraft.util.RandomSource;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import pictures.cunny.client.config.Config;
 import pictures.cunny.client.framework.events.EventBus;
 import pictures.cunny.client.framework.gui.Gui;
@@ -13,6 +18,9 @@ import pictures.cunny.client.framework.modules.Categories;
 import pictures.cunny.client.framework.modules.Category;
 import pictures.cunny.client.framework.modules.Module;
 import pictures.cunny.client.framework.modules.Modules;
+import pictures.cunny.client.impl.modules.exploits.FakeDDOS;
+import pictures.cunny.client.impl.modules.exploits.InstantClose;
+import pictures.cunny.client.impl.modules.exploits.SilentClose;
 import pictures.cunny.client.impl.modules.misc.BrandSpoof;
 import pictures.cunny.client.impl.modules.misc.DetachMouse;
 import pictures.cunny.client.impl.modules.misc.Rotation;
@@ -24,16 +32,8 @@ import pictures.cunny.client.impl.modules.world.SignFucker;
 import pictures.cunny.client.plugins.PluginManager;
 import pictures.cunny.client.utility.LatencyUtils;
 import pictures.cunny.client.utility.StringUtils;
-import net.fabricmc.api.ModInitializer;
-import net.fabricmc.loader.api.FabricLoader;
-import net.minecraft.client.Minecraft;
-import net.minecraft.util.RandomSource;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import pictures.cunny.client.impl.modules.exploits.*;
 
 import java.awt.*;
-import java.net.Socket;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 

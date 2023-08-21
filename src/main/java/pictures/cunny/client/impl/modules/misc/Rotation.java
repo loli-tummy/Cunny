@@ -1,5 +1,7 @@
 package pictures.cunny.client.impl.modules.misc;
 
+import net.minecraft.network.protocol.game.ClientboundPlayerLookAtPacket;
+import net.minecraft.network.protocol.game.ServerboundMovePlayerPacket;
 import pictures.cunny.client.framework.events.EventListener;
 import pictures.cunny.client.framework.modules.Categories;
 import pictures.cunny.client.framework.modules.Module;
@@ -7,8 +9,6 @@ import pictures.cunny.client.framework.modules.settings.BoolSetting;
 import pictures.cunny.client.framework.modules.settings.SettingGroup;
 import pictures.cunny.client.impl.events.game.PacketEvent;
 import pictures.cunny.client.utility.PacketUtils;
-import net.minecraft.network.protocol.game.ClientboundPlayerLookAtPacket;
-import net.minecraft.network.protocol.game.ServerboundMovePlayerPacket;
 
 public class Rotation extends Module {
     public SettingGroup bypassGroup = add(new SettingGroup("Bypassing",

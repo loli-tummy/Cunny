@@ -2,15 +2,6 @@ package pictures.cunny.client.impl.modules.world;
 
 import fi.dy.masa.litematica.world.SchematicWorldHandler;
 import fi.dy.masa.litematica.world.WorldSchematic;
-import pictures.cunny.client.Cunny;
-import pictures.cunny.client.framework.events.EventListener;
-import pictures.cunny.client.framework.modules.Categories;
-import pictures.cunny.client.framework.modules.Module;
-import pictures.cunny.client.impl.events.game.TickEvent;
-import pictures.cunny.client.utility.InventoryUtils;
-import pictures.cunny.client.utility.PacketUtils;
-import pictures.cunny.client.utility.WorldUtils;
-import pictures.cunny.client.utility.blocks.BlockUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.protocol.game.ServerboundPickItemPacket;
 import net.minecraft.network.protocol.game.ServerboundUseItemOnPacket;
@@ -20,6 +11,15 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
+import pictures.cunny.client.Cunny;
+import pictures.cunny.client.framework.events.EventListener;
+import pictures.cunny.client.framework.modules.Categories;
+import pictures.cunny.client.framework.modules.Module;
+import pictures.cunny.client.impl.events.game.TickEvent;
+import pictures.cunny.client.utility.InventoryUtils;
+import pictures.cunny.client.utility.PacketUtils;
+import pictures.cunny.client.utility.WorldUtils;
+import pictures.cunny.client.utility.blocks.BlockUtils;
 
 public class AutoPlace extends Module {
     public AutoPlace() {
@@ -56,7 +56,8 @@ public class AutoPlace extends Module {
                 assert mc.player != null;
                 slot = mc.player.getInventory().selected;
             } else if (InventoryUtils.isHotbarSlot(slot)) {
-                slot = InventoryUtils.getHotbarOffset() - slot;;
+                slot = InventoryUtils.getHotbarOffset() - slot;
+                ;
             }
 
             Cunny.log("Slot of {}", slot);

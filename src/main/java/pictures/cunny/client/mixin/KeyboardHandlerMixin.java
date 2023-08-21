@@ -1,16 +1,16 @@
 package pictures.cunny.client.mixin;
 
+import net.minecraft.client.KeyboardHandler;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import pictures.cunny.client.Cunny;
 import pictures.cunny.client.framework.gui.Gui;
 import pictures.cunny.client.framework.gui.utility.CKeys;
 import pictures.cunny.client.framework.modules.Categories;
 import pictures.cunny.client.framework.modules.Category;
 import pictures.cunny.client.framework.modules.Module;
-import net.minecraft.client.KeyboardHandler;
-import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(value = KeyboardHandler.class, priority = 1)
 public abstract class KeyboardHandlerMixin {

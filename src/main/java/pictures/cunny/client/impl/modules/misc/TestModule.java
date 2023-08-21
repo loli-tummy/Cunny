@@ -1,5 +1,10 @@
 package pictures.cunny.client.impl.modules.misc;
 
+import it.unimi.dsi.fastutil.objects.ObjectList;
+import net.minecraft.network.protocol.game.ClientboundContainerSetSlotPacket;
+import net.minecraft.network.protocol.game.ServerboundClientCommandPacket;
+import net.minecraft.network.protocol.game.ServerboundContainerClosePacket;
+import net.minecraft.world.level.block.Blocks;
 import pictures.cunny.client.framework.events.EventListener;
 import pictures.cunny.client.framework.modules.Categories;
 import pictures.cunny.client.framework.modules.Module;
@@ -8,11 +13,6 @@ import pictures.cunny.client.framework.modules.settings.wrappers.ImBlockPos;
 import pictures.cunny.client.impl.events.game.PacketEvent;
 import pictures.cunny.client.impl.events.game.TickEvent;
 import pictures.cunny.client.utility.PacketUtils;
-import it.unimi.dsi.fastutil.objects.ObjectList;
-import net.minecraft.network.protocol.game.ClientboundContainerSetSlotPacket;
-import net.minecraft.network.protocol.game.ServerboundClientCommandPacket;
-import net.minecraft.network.protocol.game.ServerboundContainerClosePacket;
-import net.minecraft.world.level.block.Blocks;
 
 public class TestModule extends Module {
     public SettingGroup testGroup = add(new SettingGroup("SEX !",
@@ -55,7 +55,7 @@ public class TestModule extends Module {
     @EventListener
     public void onPreTick(TickEvent.Pre event) {
         if (mc.player == null) return;
-        for (int i = 0; i < numberino.value(); i++) {
+        for (int i = 0; i < numberino.value().get(); i++) {
             PacketUtils.send(new ServerboundClientCommandPacket(ServerboundClientCommandPacket.Action.REQUEST_STATS));
             PacketUtils.send(new ServerboundContainerClosePacket(-1));
             //PacketUtils.send(new ServerboundContainerClickPacket(mc.player.containerMenu.containerId, mc.player.containerMenu.getStateId(), -999, 0, ClickType.QUICK_CRAFT, ItemStack.EMPTY, new Int2ObjectOpenHashMap<>()));

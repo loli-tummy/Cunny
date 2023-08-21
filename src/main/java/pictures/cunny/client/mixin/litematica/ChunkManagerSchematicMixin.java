@@ -2,7 +2,6 @@ package pictures.cunny.client.mixin.litematica;
 
 import fi.dy.masa.litematica.world.ChunkManagerSchematic;
 import fi.dy.masa.litematica.world.ChunkSchematic;
-import pictures.cunny.client.utility.litematica.LiteHacks;
 import it.unimi.dsi.fastutil.longs.Long2ObjectMap;
 import net.minecraft.world.level.ChunkPos;
 import org.spongepowered.asm.mixin.Final;
@@ -11,6 +10,7 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import pictures.cunny.client.utility.litematica.LiteHacks;
 
 @Mixin(value = ChunkManagerSchematic.class, remap = false)
 public class ChunkManagerSchematicMixin {

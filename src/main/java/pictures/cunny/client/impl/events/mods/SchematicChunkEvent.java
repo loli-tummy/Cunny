@@ -1,8 +1,6 @@
 package pictures.cunny.client.impl.events.mods;
 
-import fi.dy.masa.litematica.schematic.projects.SchematicProject;
 import fi.dy.masa.litematica.world.ChunkSchematic;
-import net.minecraft.world.level.ChunkPos;
 import pictures.cunny.client.framework.events.Event;
 
 public class SchematicChunkEvent extends Event {

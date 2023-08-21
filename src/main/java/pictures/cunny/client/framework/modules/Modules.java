@@ -1,9 +1,9 @@
 package pictures.cunny.client.framework.modules;
 
-import pictures.cunny.client.Cunny;
 import it.unimi.dsi.fastutil.objects.Object2ObjectArrayMap;
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
 import org.jetbrains.annotations.Nullable;
+import pictures.cunny.client.Cunny;
 
 import java.util.List;
 import java.util.Map;

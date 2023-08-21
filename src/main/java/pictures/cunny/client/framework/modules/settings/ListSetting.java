@@ -4,12 +4,12 @@ import imgui.ImGui;
 import imgui.flag.ImGuiInputTextFlags;
 import imgui.flag.ImGuiTableFlags;
 import imgui.type.ImString;
-import pictures.cunny.client.config.Config;
-import pictures.cunny.client.config.modules.settings.ListSettingConfig;
-import pictures.cunny.client.utility.StringUtils;
 import it.unimi.dsi.fastutil.objects.ObjectList;
 import it.unimi.dsi.fastutil.objects.ObjectLists;
 import org.jetbrains.annotations.NotNull;
+import pictures.cunny.client.config.Config;
+import pictures.cunny.client.config.modules.settings.ListSettingConfig;
+import pictures.cunny.client.utility.StringUtils;
 
 import java.util.List;
 import java.util.function.Predicate;

@@ -1,8 +1,8 @@
 package pictures.cunny.client.config.modules.settings;
 
-import pictures.cunny.client.framework.modules.settings.Setting;
 import net.minecraft.world.item.Item;
 import org.jetbrains.annotations.NotNull;
+import pictures.cunny.client.framework.modules.settings.Setting;
 
 public class ItemSettingConfig extends SettingConfig<Item> {
     @Override
