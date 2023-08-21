@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "cunny",
+  "version": "${version}",
+  "name": "Cunny Menu",
+  "description": "An either overly complex or overly simplified minecraft menu",
+  "authors": [
+    "ViaTi"
+  ],
+  "contact": {
+    "email": "motherofsnake@duck.com"
+  },
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "pictures.cunny.client.Cunny"
+    ]
+  },
+  "mixins": [
+    "cunny.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.13",
+    "minecraft": ">=1.20"
+  }
+}

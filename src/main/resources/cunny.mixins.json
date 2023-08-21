@@ -1,0 +1,30 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "pictures.cunny.client.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "ConnectionMixin",
+    "FriendlyByteBufMixin",
+    "IClipContext",
+    "ResourceLocationMixin",
+    "ServerGamePacketListenerImplMixin",
+    "SharedConstantsMixin"
+  ],
+  "client": [
+    "BookEditScreenMixin",
+    "ChatComponentMixin",
+    "ClientChunkCacheMixin",
+    "ClientPacketListenerMixin",
+    "GameRendererMixin",
+    "KeyboardHandlerMixin",
+    "LevelLoadingScreenMixin",
+    "MinecraftMixin",
+    "MouseHandlerMixin",
+    "ReceivingLevelScreenMixin",
+    "TextFieldHelperMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
